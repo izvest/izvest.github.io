@@ -1,125 +1,69 @@
 /*--------Basic--------*/
 
-html, body
-{
-background: url('../images/background.png');
+html, body{
+background: #010101;
 }
 
-p
-{
+p, li, ul{
 text-decoration:none;
 font-family:Oxygen;
 font-size:14px;
 color:#EBFFEB;
 }
 
-h1
-{
+h1, h2, h3{
 text-decoration:bold;
 font-family:Oxygen;
-font-size:20px;
 color:#EBFFEB;
+padding-bottom:5px;
 }
 
-h2
-{
-text-decoration:bold;
-font-family:Oxygen;
-font-size:18px;
-color:#EBFFEB;
-}
+h1{font-size:20px;}
+h2{font-size:18px;}
+h3{font-size:16px;}
 
-h3
-{
-text-decoration:bold;
-font-family:Oxygen;
-font-size:16px;
-color:#EBFFEB;
-}
-
-a
-{
+a{
 text-decoration:none;
 font-family:Oxygen;
 font-size:14px;
 color:#DDAA00;
 }
 
-li ,ul
-{
-font-family:Oxygen;
-font-size:14px;
-color:#EBFFEB;
+.con{padding: 12px 8px;}
+/*-------MENU-------*/
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-#content
-{
-position:absolute;
-float:left;
-left:130px;
-padding-right:5px;
+ul.topnav li {
+    float: left;
 }
 
-/*--------Menu---------*/
-
-#menu 
-{
-margin-top: -10px;
-margin-left: -4px;
-position: relative;
-float: left;
-width: 110px;
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-ul.menuitems, li.menuitem 
-{
-font-family: 'Oxygen', sans-serif;
-list-style-type: none;
-padding-top:2px;
-padding-left:6px;
-padding-right:4px;
-padding-bottom:2px;
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
 }
 
-li.menuitem 
-{
-border: 1px solid black;
-background: url('../images/background-mnu.png');
+ul.topnav li a.active {
+    background-color: #4CAF50;
 }
+ul.topnav li.right {float: right;}
 
-li.menuitem:hover
-{
-background: url('../images/background-a.png');
-}
-
-li.submenuitem 
-{
-border: 1px solid black;
-background: url('../images/background-mnu.png');
-font-family: 'Oxygen', sans-serif;
-list-style-type: none;
-padding-top:2px;
-padding-left:12px;
-padding-right:4px;
-padding-bottom:2px;
-}
-
-li.submenuitem:hover 
-{
-background: url('../images/background-a.png');
-}
-
-#curritem 
-{
-background: url('../images/background-curr.png');
-}
-
-a.menuitem, a.submenuitem
-{
-text-decoration:none;
-font-family:Oxygen;
-font-size:14px;
-color:#EBFFEB;
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
 }
 
 /*----------Font----------*/
